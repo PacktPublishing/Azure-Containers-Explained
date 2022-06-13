@@ -1,0 +1,33 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: billingstatements
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: billingstatements
+  template:
+    metadata:
+      labels:
+        app: billingstatements
+    spec:
+      containers:
+      - name: billingstatements
+        image: whaakman/container-demos:billingstatementsv3
+        ports:
+        - containerPort: 80
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: billingstatements
+  labels:
+    name: billingstatements
+spec:
+  type: LoadBalancer
+  ports:
+  - port: 80
+    targetPort: 80
+  selector:
+    app: billingstatements   
