@@ -12,8 +12,14 @@ properties:
     containers:
       - image: whaakman/container-demos:cloudadventuresshopv1
         name: frontend
+        resources:
+          cpu: 1
+          memory: 2Gi
       - image: docker.io/whaakman/container-demos:billingstatementsv3
-        name: api      
+        name: api
+        resources:
+          cpu: 1
+          memory: 2Gi        
     scale:
       minReplicas: 1
       maxReplicas: 1
