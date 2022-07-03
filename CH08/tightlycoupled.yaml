@@ -1,17 +1,22 @@
-type: Microsoft.App/ContainerApps
-template:
-containers:
-- name: frontend
-    image: docker.io/whaakman/container-demos:cloudadventuresshopv1
-- name: api
-    image: docker.io/whaakman/container-demos:billingstatementsv3
-scale:
-    maxReplicas: 1
-    minReplicas: 1
-managedEnvironmentId: /subscriptions/[SUBSCRIPTION_ID]/resourceGroups/rg-containerapps/providers/Microsoft.App/managedEnvironments/tightlycoupled
-configuration:
-activeRevisionsMode: Multiple
-ingress:
-    external: true
-    allowInsecure: false
-    targetPort: 80
+kind: containerapp
+location: westeurope
+name: tightlycoupled
+resourceGroup: rg-containerapps
+type: Microsoft.App/containerApps
+properties:
+  managedEnvironmentId: /subscriptions/[SUBSCRIPTION_ID]/resourceGroups/rg-containerapps/providers/Microsoft.App/managedEnvironments/tightlycoupled
+  configuration:
+    activeRevisionsMode: Multiple
+    ingress:
+      external: true
+      allowInsecure: false
+      targetPort: 80
+  template:
+    containers:
+      - image: whaakman/container-demos:cloudadventuresshopv1
+        name: frontend
+      - image: docker.io/whaakman/container-demos:billingstatementsv3
+        name: api      
+    scale:
+      minReplicas: 1
+      maxReplicas: 1
