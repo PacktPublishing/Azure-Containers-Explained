@@ -3,7 +3,7 @@ template:
 containers:
 - name: frontend
     image: whaakman/container-demos:cloudadventuresshopv1
-- name: vote
+- name: api
     image: whaakman/container-demos:billingstatementsv3
 scale:
     maxReplicas: 1
