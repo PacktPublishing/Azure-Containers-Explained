@@ -8,7 +8,7 @@ containers:
 scale:
     maxReplicas: 1
     minReplicas: 1
-managedEnvironmentId: /subscriptions/[SUBSCRIPTION_ID]/resourceGroups/[RESOURCE_GROUP_NAME]/providers/Microsoft.App/managedEnvironments/tightlycoupled
+managedEnvironmentId: /subscriptions/[SUBSCRIPTION_ID]/resourceGroups/rg-containerapps/providers/Microsoft.App/managedEnvironments/tightlycoupled
 configuration:
 activeRevisionsMode: Multiple
 ingress:
