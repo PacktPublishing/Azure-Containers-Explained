@@ -1,7 +1,4 @@
 kind: containerapp
-location: westeurope
-name: tightlycoupled
-resourceGroup: rg-containerapps
 type: Microsoft.App/containerApps
 properties:
   managedEnvironmentId: /subscriptions/[SUBSCRIPTION_ID]/resourceGroups/rg-containerapps/providers/Microsoft.App/managedEnvironments/tightlycoupled
