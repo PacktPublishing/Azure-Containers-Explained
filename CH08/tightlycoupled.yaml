@@ -2,9 +2,9 @@ type: Microsoft.App/ContainerApps
 template:
 containers:
 - name: frontend
-    image: whaakman/container-demos:cloudadventuresshopv1
+    image: docker.io/whaakman/container-demos:cloudadventuresshopv1
 - name: api
-    image: whaakman/container-demos:billingstatementsv3
+    image: docker.io/whaakman/container-demos:billingstatementsv3
 scale:
     maxReplicas: 1
     minReplicas: 1
