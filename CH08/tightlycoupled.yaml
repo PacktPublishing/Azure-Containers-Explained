@@ -1,0 +1,17 @@
+type: Microsoft.App/ContainerApps
+template:
+containers:
+- name: frontend
+    image: whaakman/container-demos:cloudadventuresshopv1
+- name: vote
+    image: whaakman/container-demos:billingstatementsv3
+scale:
+    maxReplicas: 1
+    minReplicas: 1
+managedEnvironmentId: /subscriptions/[SUBSCRIPTION_ID]/resourceGroups/[RESOURCE_GROUP_NAME]/providers/Microsoft.App/managedEnvironments/tightlycoupled
+configuration:
+activeRevisionsMode: Multiple
+ingress:
+    external: true
+    allowInsecure: false
+    targetPort: 80
