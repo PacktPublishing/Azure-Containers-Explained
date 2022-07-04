@@ -25,9 +25,27 @@ metadata:
   labels:
     name: frontend
 spec:
-  type: LoadBalancer
+  type: ClusterIP
   ports:
   - port: 80
     targetPort: 80
   selector:
     app: frontend  
+---
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  name: frontend
+spec:
+  ingressClassName: nginx
+  rules:
+    - host: frontend.cloudadventures.com
+      http:
+        paths:
+          - pathType: Prefix
+            backend:
+              service:
+                name: frontend
+                port:
+                  number: 80
+            path: /
