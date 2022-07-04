@@ -25,7 +25,7 @@ metadata:
   labels:
     name: billingstatements
 spec:
-  type: LoadBalancer
+  type: ClusterIP
   ports:
   - port: 80
     targetPort: 80
@@ -39,13 +39,13 @@ metadata:
 spec:
   ingressClassName: nginx
   rules:
-    - host: frontend.cloudadventures.com
+    - host: cloudadventures.com
       http:
         paths:
           - pathType: Prefix
             backend:
               service:
-                name: frontend
+                name: billingstatements
                 port:
                   number: 80
             path: /billingstatement
