@@ -37,7 +37,7 @@ kind: Ingress
 metadata:
   name: frontend
 spec:
-  ingressClassName: internal-nginx
+  ingressClassName: internal-ingress
   rules:
     - host: cloudadventures.com
       http:
