@@ -1,0 +1,29 @@
+name: billingcontainergroup
+properties:
+  containers:
+  - name: billinggenerator
+    properties:
+      image: whaakman/container-demos:billinggeneratorv1
+      resources:
+        requests:
+          cpu: 1
+          memoryInGb: 1.5
+      ports:
+      - port: 80
+      - port: 8080
+  - name: billingstatements
+    properties:
+      image: whaakman/container-demos:billingstatementsv3
+      resources:
+        requests:
+          cpu: 1
+          memoryInGb: 1.5
+  osType: Linux
+  ipAddress:
+    type: Public
+    ports:
+    - protocol: tcp
+      port: 80
+    - protocol: tcp
+      port: 8080
+type: Microsoft.ContainerInstance/containerGroups
