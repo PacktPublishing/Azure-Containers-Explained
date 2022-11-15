@@ -1,0 +1,16 @@
+nameOverride: customer2
+fullnameOverride: customer2
+
+image:
+  repository: whaakman/container-demos
+  # Overrides the image tag whose default is the chart appVersion.
+  tag: cloudadventuresshopv1
+
+ingress:
+  enabled: true
+  className: internal-ingress
+  hosts:
+    - host: customer2.cloudadventures.com
+      paths:
+        - path: /
+          pathType: Prefix
