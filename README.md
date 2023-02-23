@@ -51,7 +51,7 @@ We also provide a PDF file that has color images of the screenshots/diagrams use
 
 * The Kubernetes Operator Framework Book [[Packt]](https://www.packtpub.com/product/the-kubernetes-operator-framework-book/9781803232850) [[Amazon]](https://www.amazon.in//dp/1803232854)
 
-## Get to Know the Author
+## Get to Know the Authors
 **Wesley Haakman**
 lives in the Netherlands and has been working with Microsoft Azure for over 8 years. He is a Microsoft Azure MVP and works as a Head of DevOps at Intercept, a cloud service provider company in the Netherlands. Wesley has been working in IT for more than 18 years, starting his career as an IT support technician for Novell Netware and Linux Suse environment. Now, his primary focus is on using Microsoft Azure for building and facilitating the DevOps teams to add value to customers. In his spare time, Wesley enjoys writing for his own blog as well as providing sessions for events and user groups. Outside of tech, he is into mountain biking and spends a fair amount of time with the family.
 
