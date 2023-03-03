@@ -57,3 +57,8 @@ lives in the Netherlands and has been working with Microsoft Azure for over 8 ye
 
 **Richard Hooper**
 also known as Pixel Robots online, lives in Newcastle, England. He is a Microsoft MVP for Azure who works at Intercept as an Azure architect, based in the Netherlands. He has about 20 years of professional experience in the IT industry. He has worked with Microsoft technologies for all of his career but has also dabbled with Linux. Richard has a passion for learning about new technologies and writing for his own blog. He can be also reached out on Twitter at pixel_robots. He is enthusiastic about the cloud-native space on Azure. In his spare time, he enjoys sharing knowledge and helping people with whatever technology he has hands-on experience and passion with through his blogs, podcasts, videos, etc.
+
+### Download a free PDF
+
+ <i>If you have already purchased a print or Kindle version of this book, you can get a DRM-free PDF version at no cost.<br>Simply click on the link to claim your free PDF.</i>
+<p align="center"> <a href="https://packt.link/free-ebook/9781803231051">https://packt.link/free-ebook/9781803231051 </a> </p>
